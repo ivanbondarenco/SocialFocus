@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Focus</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Focus</h1>
+        
+        <div class="status-container">
+            <span>Estado:</span>
+            <label class="switch">
+                <input type="checkbox" id="toggleExtension" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="timer-container" id="twitterTimer">
+            <h2>Tiempo restante en X (Twitter):</h2>
+            <div class="time-display" id="timeLeft">20:00</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Redes sociales bloqueadas por defecto.</p>
+            <p>YouTube sin distracciones activado.</p>
+        </div>
+    </div>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>

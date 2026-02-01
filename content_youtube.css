@@ -1,0 +1,61 @@
+/* content_youtube.css */
+/* Hide Comments */
+ytd-comments,
+#comments,
+ytd-item-section-renderer[section-identifier="comment-item-section"] {
+    display: none !important;
+}
+
+/* Hide Sidebar Suggestions (Watch Next) */
+#secondary,
+ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+/* Hide Homepage Recommendations - DISABLED to allow home feed */
+/*
+ytd-rich-grid-renderer,
+ytd-browse[page-subtype="home"] #primary {
+    display: none !important;
+}
+*/
+
+/* Banner styles */
+#social-focus-banner {
+    width: 100%;
+    background-color: #181818;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    position: relative;
+    z-index: 9999;
+    font-family: Roboto, Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide End Screen Videowall */
+.ytp-endscreen-content {
+    display: none !important;
+}
+
+/* Hide Shorts Tab */
+ytd-guide-entry-renderer[title="Shorts"],
+ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+    display: none !important;
+}
+
+/* Center the video player since sidebar is gone */
+ytd-watch-flexy[flexy] #primary.ytd-watch-flexy {
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+div#columns {
+    justify-content: center !important;
+}
